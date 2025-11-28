@@ -26,7 +26,6 @@ These columns are included for the following reasons:
 
 - To provide full transparency of the preprocessing pipeline.
 - To show the relationship between original text, cleaned text, and translated versions.
-- To support reviewer requests for code + sample data + transformation examples.
 - To demonstrate how normalization, translation, and augmentation were performed.
 - To help anyone reproduce or understand the logic used in the experiments.
 
@@ -34,5 +33,4 @@ These columns are included for the following reasons:
 
 - Only the original `text` and `label` columns come from the Swami et al. dataset.  
 - All other columns (`clean_tweet`, `English`, `hindi`, `sentiment`) were prepared by the authors as part of the research workflow.
-- The dataset is shared here solely for review and reproducibility, as requested by the reviewer.
-
+  
