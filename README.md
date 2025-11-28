@@ -14,7 +14,7 @@ Below is a detailed description of each column in the dataset:
 | **Unnamed: 0**   | Index column automatically generated during CSV export. Not used in the model. |
 | **text**         | Original text/tweet from the Swami sarcasm dataset. This is the raw, unprocessed sample. |
 | **label**        | Original label from the dataset (e.g., sarcastic vs. non-sarcastic). |
-| **clean_tweet**  | Preprocessed and normalized version created by the authors. Includes text cleaning, emoji handling, spelling correction, normalization of transliterated Hinglish terms, and removal of noise. |
+| **clean_tweet**  | Preprocessed and normalized version created by the authors. Includes text cleaning, normalization of transliterated Hinglish terms, and removal of noise. |
 | **English**      | Author-generated English translation of each sample. Added to support multilingual preprocessing and cross-lingual comparison. |
 | **hindi**        | Full Hindi translation created by the authors. This helps demonstrate translation quality, multilingual feature processing, and use of Hindi semantics in the study. |
 | **sentiment**    | Additional sentiment annotation or polarity value assigned by the authors (if applicable for the experiment). |
@@ -25,7 +25,6 @@ These columns are included for the following reasons:
 
 - To provide full transparency of the preprocessing pipeline.
 - To show the relationship between original text, cleaned text, and translated versions.
-- To support reviewer requests for code + sample data + transformation examples.
 - To demonstrate how normalization, translation, and augmentation were performed.
 - To help anyone reproduce or understand the logic used in the experiments.
 
@@ -33,5 +32,4 @@ These columns are included for the following reasons:
 
 - Only the original `text` and `label` columns come from the Swami et al. dataset.  
 - All other columns (`clean_tweet`, `English`, `hindi`, `sentiment`) were prepared by the authors as part of the research workflow.
-- The dataset is shared here solely for review and reproducibility, as requested by the reviewer.
 
