@@ -2,19 +2,9 @@
 ### mBERT + Augmentation + Preprocessing Demonstration Notebook
 
 This repository provides the dataset and a demonstration notebook for sarcasm detection on **code-mixed Hinglish text**.  
-The notebook illustrates preprocessing, normalization techniques, and augmentation strategies that support an ongoing research study.
+The notebook illustrates preprocessing, and augmentation strategies that support an ongoing research study.
 
 ---
-
-## 📂 Repository Structure
-
-sarcasm/
-│
-├── rnn-mbert-sarcasm-augmentation.ipynb # Notebook showing preprocessing + augmentation
-├── sarcasm_all.csv # Dataset (Hinglish + translations)
-└── README.md # Documentation
-
-
 ## Dataset Description
 
 This repository includes the full sarcasm dataset created by Swami et al.,
@@ -82,10 +72,7 @@ Two augmentation methods are shown:
 #### **A. Sentence-Level**
 - GPT-2 paraphrasing (`nlpaug`)
 - Multilingual BERT
-
-
-
-Each example includes original + augmented outputs.
+-Each example includes original + augmented outputs.
 
 ---
 
@@ -114,7 +101,6 @@ This avoids heavy computation while still explaining the workflow.
 
 ### **6. Predictions and Example Outputs**
 Outputs shown include:
-
 
 These demonstrate how augmentationg affects the final prediction.
 
